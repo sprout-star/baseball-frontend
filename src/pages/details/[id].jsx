@@ -12,7 +12,7 @@ const DetailPage = () => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get('https://baseball-backend.onrender.com/list');
+            const response = await axios.get('//localhost:3000/list');
             const data = response.data;
             const foundItem = data.find(i => i.picture.split('/').pop().split('.')[0] === id);
             setItem(foundItem);
