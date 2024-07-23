@@ -15,7 +15,7 @@ export default function App() {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get('//localhost:3000/list');
+            const response = await axios.get('https://baseball-backend.onrender.com/list');
             setCards(response.data);
             console.log(response.data);
         } catch (error) {
