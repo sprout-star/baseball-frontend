@@ -36,7 +36,7 @@ const ModalComponent = ({ isOpen, onRequestClose, onSubmit }) => {
             }
 
             try {
-                await axios.post("//localhost:3000/insert/", formDataToSend, {
+                await axios.post("https://baseball-backend.onrender.com/insert/", formDataToSend, {
                     headers: {
                         'Content-Type': 'multipart/form-data',
                     },
